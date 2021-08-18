@@ -24,16 +24,30 @@
 	<div>
 		<p id="num3"></p>
 		<p id="name"></p>
+		<p id="demo"></p>
+		<p id="arry"></p>
 
 	</div>
 
 	<script >
 		var num1=10,num2=20;
-		var car="Audi";
-		var car;
-
+		car="Audi";
 		document.getElementById('num3').innerHTML=(num1+num2);
 		document.getElementById("name").innerHTML = car;
+		var car;
+		try {
+			carName = "Saab";
+			let carName = "Volvo";
+		}
+		catch(err) {
+			document.getElementById("demo").innerHTML = err;
+		}
+		const  car_arry =["Toyota ","Audi ","WagonR ", "BMW" ];
+		//document.getElementById("arry").innerHTML = car_arry;
+		car_arry=["pradnya"];
+		document.getElementById("arry").innerHTML = car_arry;
+
+
 		
 
 	</script>
