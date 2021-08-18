@@ -11,6 +11,10 @@
 		{
 			background-color: rgb(240,240.240);
 		}
+		p{
+			font-family: gorgia sans-serif;
+			font-size: 30px;
+		}
 	</style>
 </head>
 <body>
@@ -19,11 +23,18 @@
 	</h1>
 	<div>
 		<p id="num3"></p>
+		<p id="name"></p>
+
 	</div>
 
 	<script >
 		var num1=10,num2=20;
+		var car;
+
 		document.getElementById('num3').innerHTML=(num1+num2);
+		document.getElementById("name").innerHTML = car;
+		
+
 	</script>
 </body>
 </html>
