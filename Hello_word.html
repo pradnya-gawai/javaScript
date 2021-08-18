@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPTS</title</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+
+	<style >
+		#today
+		{
+			font-family:"Trirong", serif;
+			border:1px solid transparent;
+			background-color: #a398eb;
+
+		}
+		h1
+		{
+			font-family: verdana, sans-serif;
+			text-align: center;
+			position: sticky;
+			color:#100466;
+		}
+		.today_date
+		{
+
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #1b5452;
+		}
+		button.today_date:hover
+		{
+			background-color:#96e0de;
+		}
+		body
+		{
+			background-color: rgb(240,240,240);
+		}
+		.my-date, .light
+		{
+			width: auto;
+			height: 200px;
+			border: 1px solid black;
+			margin: 5px;
+						text-align: center;
+
+		}
+		#light_img
+		{
+			margin-left: 30px;
+			margin-right: 30px;
+
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<header>
+		<h1> My Scripts </h1>
+	</header>
+	<div class="my-date">
+		<button class="today_date" onclick="document.getElementById('today').innerHTML=Date();"> Todays Date</button>
+		<p id="today"></p>
+	</div>
+	<div class="light">
+		<button class="today_date" onclick="document.getElementById('light_img').src='bulb_on.gif'">Trun On</button>
+		<img id="light_img" src="bulb_off.gif" alt="">
+		<button class="today_date" onclick="document.getElementById('light_img').src='bulb_off.gif'">Trun Off</button>
+
+	</div>
+</body>
+</html>
