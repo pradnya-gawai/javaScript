@@ -25,6 +25,7 @@ var inputText=document.getElementById('item-text')
  var delButton=document.createElement('button')
 delButton.className='delete'
 delButton.textContent='X'
+delButton.style.marginLeft=200;
 
 
 //appending element to
