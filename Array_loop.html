@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variable</title>
+	<style >
+		h1{
+			font-family: verdana sans-serif;
+			text-align: center;
+		}
+		body
+		{
+			background-color: rgb(240,240.240);
+		}
+		p{
+			font-family: gorgia sans-serif;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		String Method
+	</h1>
+	<div>
+		<p id="one"></p>
+		<p id="two"></p>
+		<p id="three"></p>
+		<p id="four"></p>
+		<p id="five"></p>
+	</div>
+
+	<script >
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+document.getElementById("one").innerHTML = text;
+
+text += "</ul>";
+let list="<ol>";
+for(let i=0;i<fLen;i++)
+{
+	list+="<li>"+fruits[i]+ "</li>";
+}
+document.getElementById("two").innerHTML = list;
+list+="</ol>";
+
+
+
+
+	</script>
+</body>
+</html>

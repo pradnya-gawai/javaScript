@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Loop</title>
+		<style >
+		h1{
+			font-family: verdana sans-serif;
+			text-align: center;
+		}
+		body
+		{
+			background-color: rgb(240,240.240);
+		}
+		p{
+			font-family: gorgia sans-serif;
+			font-size: 30px;
+		}
+	</style>
+
+</head>
+<body>
+<header><h1>  Javascript  Event Loop </h1></header>
+<P id="one"></P>
+<P id="two"></P>
+<P id="three"></P>
+<button onclick="display_one()"> Before</button>
+<button onclick="dealy(5)"> Dealy</button>
+<button onclick="display_two()"> After</button>
+<script>
+	function display_one()
+	{
+		document.getElementById("one").innerHTML="Before Dealy";
+	}
+	function dealy(sec)
+	{
+		   let start = now = Date.now()
+   			while(now-start < (sec*1000)) {
+     		now = Date.now();
+   				}
+
+		document.getElementById("two").innerHTML=now;
+	}
+	function display_two()
+	{
+		document.getElementById("three").innerHTML="After Dealy";
+	}
+</script>
+
+</body>
+</html>
