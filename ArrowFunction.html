@@ -17,13 +17,37 @@
 	<p id="demo">
 		
 	</p>
+	<h2> Arrow Function </h2>
+	<p id="demo2"> </p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
 </div>
 <script >
+	//Normal function
 	var display=function() {
 		return "Hello Function";
 	}
 	document.getElementById("demo").innerHTML=display();
-</script>
+	// arrow function 
+	var display1=() => { return "arrow function with curly brackets";}
+	document.getElementById("demo2").innerHTML=display1();
+
+	// arrow function without return statment
+	var display2=() => "If Function have only one statment you can remove curly braket and return statment ";
+	document.getElementById("demo3").innerHTML=display2();
+
+	// function with parameter
+	var display3 =(val,val2) => "Hellow " +val;
+	document.getElementById("demo4").innerHTML=display3("Hello","Universe!");
+	document
+	// function with one parameter
+
+
+	//function with only one parameter
+	 var display4=val =>"hello" +val;
+	 document.getElementById("demo5").innerHTML=display4("without parahesis")
+	</script>
 
 </body>
 </html>

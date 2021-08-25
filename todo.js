@@ -35,3 +35,27 @@ li.appendChild(span)
 li.appendChild(delButton)
 newItem.appendChild(li)
 }
+//delegation
+var del=document.getElementsByClassName('delete')
+var newItem=document.getElementById('items')
+newItem.addEventListener('click',removeItem)
+function removeItem(e)
+{
+	if (e.target.className ==='delete'){
+		console.log(e.target)
+	
+	var mainLi=e.target.parentElement;
+		console.log(mainLi)
+		mainLi.remove()
+	}else
+	{
+		console.log(' do nothing')
+	}
+
+
+
+
+
+
+}
+

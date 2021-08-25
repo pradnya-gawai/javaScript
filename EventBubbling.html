@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Bubbling </title>
+	<style>
+		#parent
+		{
+			height: 100vh;
+			width:100vw;
+			background-color: blue;
+		}
+		#child
+		{
+			height: 50vh;
+			width:50vw;
+			background-color: green;
+		}
+		#grandchild
+		{
+			height: 25vh;
+			width:25vw;
+			background-color: red;
+		}
+
+	</style>
+</head>
+<body>
+<div id="parent" >
+	<div id="child" >
+			<div id="grandchild">
+		</div>
+	</div>
+</div>
+<script >
+	var parent=document.getElementById("parent");
+	parent.addEventListener("click", parentClicked);
+	var child=document.getElementById("child");
+	child.addEventListener("click",childClicked);
+	var grandchild=document.getElementById("grandchild");
+grandchild.addEventListener("click",grandChildClicked)
+	function parentClicked(){
+
+	//event.stopPropagation(); 
+		console.log("parent is clicked");
+	}
+	function childClicked(e)
+
+	{	e.stopPropagation(); 
+
+		console.log("child is cliked");
+	}
+	function grandChildClicked(event)
+	{
+			event.stopPropagation(); 
+
+		console.log("grandchild is cliked");
+	}
+</script>
+</body>
+</html>

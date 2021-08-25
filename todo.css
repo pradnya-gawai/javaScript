@@ -1,8 +1,11 @@
 body{
 	background-color: rgb(240,240,240);
 	font-family: verdana, arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-ul
+/*ul
 {
 	position: relative;
 }
@@ -10,7 +13,7 @@ h1
 {
 	text-align: center;
 }
-section
+*//*section
 {
 	display: block;
 	margin: 50px 550px;
@@ -18,7 +21,7 @@ section
 	background-color: #C8E3E2;
 	border-radius: 10px;
 }
-.delete
+*/.delete
 {
 	border: 1px solid black;
 	/*margin-left: 100px;*/
