@@ -1,0 +1,52 @@
+Core JavaScript Concepts:
+
+1 Closures:
+Understanding how closures work and where they are useful.
+Practice creating functions that use closures.
+
+2 Asynchronous JavaScript:
+Promises: Creating, chaining, and handling errors.
+async/await: How it works and converting promise chains to async/await.
+Event Loop: How JavaScript handles asynchronous operations.
+
+3 Scope and Hoisting:
+Function scope vs. block scope (var, let, const).
+Hoisting behavior of variables and functions.
+
+4 Prototypes and Inheritance:
+Prototype chain and how JavaScript handles inheritance.
+Difference between prototypal inheritance and classical inheritance.
+
+5 Event Delegation:
+How event delegation works and why it is used.
+Practical examples in DOM manipulation.
+
+6 JavaScript Design Patterns:
+Singleton, Module, Observer, Factory patterns.
+Practical implementations of these patterns in your projects.
+
+7 Higher-Order Functions:
+Functions that return other functions or take functions as arguments (map, reduce, filter).
+Examples of using higher-order functions in array manipulation.
+
+8 Error Handling:
+Best practices for handling errors using try...catch and custom error handling.
+Creating and throwing custom errors.
+
+Advanced Concepts:
+
+1 Currying and Partial Application:
+Understanding and using function currying and partial application in practical scenarios.
+
+2 Event Loop and Concurrency Model:
+In-depth understanding of the event loop, call stack, task queue, and microtasks.
+How JavaScript handles concurrency.
+
+3 JavaScript Engine Internals:
+How JavaScript engines (like V8) execute code, optimize performance, and manage memory.
+
+4 Debouncing and Throttling:
+Implementing debounce and throttle functions to optimize performance.
+
+5 Modules and Module Bundlers:
+Understanding ES6 modules, import/export, and how module bundlers like Webpack work.
