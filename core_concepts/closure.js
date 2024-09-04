@@ -3,7 +3,24 @@ A closure is a
 1 function that has access to its own scope,
 2 the scope of the outer function,
 3 and the global scope.
-It retains access to these variables even after the outer function has finished executing.  */
+It retains access to these variables even after the outer function has finished executing.
+
+
+
+What is a closure in JavaScript?
+Answer: A closure is a feature in JavaScript where a function retains access to its lexical scope (the scope in which it was defined) even after that function has been executed. In other words, a closure allows a function to access variables from an outer function after the outer function has finished executing.
+
+
+
+2. How does a closure work in JavaScript?
+Answer: When a function is defined inside another function, the inner function has access to the outer function's variables. Even after the outer function has finished executing, the inner function retains access to those variables due to the closure. This is possible because the inner function maintains a reference to the scope in which it was created.
+
+
+
+
+
+
+*/
 let globalVarible = 10
 function outerFunction() {
   const outerVariable = 'I am outside!'
