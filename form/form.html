@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Example</title>
+  </head>
+
+  <body>
+    <h1>HTML Form with Various Attributes</h1>
+
+    <form method="POST">
+      <!-- Text Input with label -->
+      <label for="username">Username: </label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+        minlength="3"
+        maxlength="15"
+      /><br /><br />
+
+      <!-- Email Input with pattern validation -->
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      /><br /><br />
+
+      <!-- Password Input with minlength and maxlength -->
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        minlength="8"
+        maxlength="20"
+      /><br /><br />
+
+      <!-- Number Input with min and max -->
+      <label for="age">Age: </label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="18"
+        max="99"
+        value="25"
+      /><br /><br />
+
+      <!-- URL Input -->
+      <label for="website">Website: </label>
+      <input
+        type="url"
+        id="website"
+        name="website"
+        placeholder="https://yourwebsite.com"
+      /><br /><br />
+
+      <!-- Date Input -->
+      <label for="dob">Date of Birth: </label>
+      <input type="date" id="dob" name="dob" /><br /><br />
+
+      <!-- Radio Buttons -->
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" checked />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br /><br />
+
+      <!-- Checkbox -->
+      <p>Interests:</p>
+      <input type="checkbox" id="coding" name="interest" value="coding" />
+      <label for="coding">Coding</label><br />
+      <input type="checkbox" id="music" name="interest" value="music" />
+      <label for="music">Music</label><br /><br />
+
+      <!-- Dropdown -->
+      <label for="country">Country: </label>
+      <select id="country" name="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option></select
+      ><br /><br />
+
+      <!-- File Input -->
+      <label for="resume">Upload your resume: </label>
+      <input
+        type="file"
+        id="resume"
+        name="resume"
+        accept=".pdf, .doc"
+      /><br /><br />
+
+      <!-- Hidden Input -->
+      <input type="hidden" name="userID" value="12345" />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+
+      <!-- Reset Button -->
+      <input type="reset" value="Reset Form" />
+    </form>
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fname">First Name: </label>
+      <input type="text" id="fname" name="fname" required /><br /><br />
+
+      <label for="lname">Last Name: </label>
+      <input type="text" id="lname" name="lname" required /><br /><br />
+
+      <label for="dob">Date of Birth: </label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+    </fieldset>
+
+    <br />
+
+    <!-- Fieldset for Account Information -->
+    <fieldset>
+      <legend>Account Information</legend>
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        required
+      /><br /><br />
+    </fieldset>
+    <label for="fruits">Choose your favorite fruits:</label>
+    <select id="fruits" name="fruits" multiple>
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="orange">Orange</option>
+      <option value="grapes">Grapes</option>
+      <option value="mango">Mango</option>
+    </select>
+    <label for="cars">Choose a car brand:</label>
+    <select id="cars" name="cars">
+      <optgroup label="German Cars">
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="mercedes">Mercedes-Benz</option>
+      </optgroup>
+      <optgroup label="American Cars">
+        <option value="ford">Ford</option>
+        <option value="chevrolet">Chevrolet</option>
+        <option value="tesla">Tesla</option>
+      </optgroup>
+      <optgroup label="Japanese Cars">
+        <option value="toyota">Toyota</option>
+        <option value="honda">Honda</option>
+        <option value="nissan">Nissan</option>
+      </optgroup>
+    </select>
+  </body>
+</html>

@@ -13,29 +13,21 @@ let removeDuplicates = () => {
 console.log(removeDuplicates())
 
 // #######################################################################
-console.log(array)
-array = [1, 2, 2, 3, 4, 4, 5]
+
 const removeDuplicatesByFilter = (array) => {
-  {
-    const exampleArray = [1, 2, 2, 3, 4, 4, 5]
+  return array.filter((item, index) => {
+    console.log(
+      'Current Item:',
+      item,
+      'Current Index:',
+      index,
+      'First Index of Item:',
+      array.indexOf(item)
+    )
 
-    const removeDuplicatesByFilter = (array) => {
-      return array.filter((item, index) => {
-        console.log(
-          'Current Item:',
-          item,
-          'Current Index:',
-          index,
-          'First Index of Item:',
-          array.indexOf(item)
-        )
-
-        // indexOf function return the 1st occurance of given item in array
-        return array.indexOf(item) === index
-      })
-    }
-
-    console.log(removeDuplicatesByFilter(exampleArray))
-  }
+    // indexOf function return the 1st occurance of given item in array
+    return array.indexOf(item) === index
+  })
 }
+
 console.log(removeDuplicatesByFilter(array))
